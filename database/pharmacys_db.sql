@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3307
--- Generation Time: 03 يوليو 2026 الساعة 06:45
+-- Generation Time: 03 يوليو 2026 الساعة 17:35
 -- إصدار الخادم: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -69,7 +69,7 @@ CREATE TABLE `medicines` (
 
 INSERT INTO `medicines` (`medicine_id`, `name`, `price`, `stock_quantity`, `description`, `image`, `category_id`) VALUES
 (18, 'Salbutamol', 10.00, 50, 'السالبوتامول (Salbutamol)، والمعروف أيضاً باسم ألبوتيرول (Albuterol)، هو دواء موسع للشعب الهوائية سريع المفعول ينتمي إلى فئة محفزات مستقبلات بيتا-2 الأدرينالية قصيرة المفعول (SABA). يُستخدم بشكل أساسي لتخفيف النوبات الحادة من ضيق التنفس والأزيز الناتج عن تشنج القصبات الهوائية.', 'image_medicines/1782886022_salbutamil.webp', 4),
-(19, 'Ibuprofen', 10.00, 200, 'إيبوبروفين (Ibuprofen)، وهو مسكن للألم ومضاد للالتهابات ومخفض للحرارة.ينتمي الدواء إلى عائلة \"مضادات الالتهاب غير الستيرويدية\" (NSAIDs) ويُستخدم بشكل شائع لتخفيف الآلام الخفيفة والمتوسطة وتخفيف الآلام: مثل صداع الرأس، ألم الأسنان، وآلام الظهر والعضلات والمفاصل.خافض للحرارة: يُستعمل لعلاج الحمى الناتجة عن نزلات البرد أو الإنفلونزا.تسكين آلام الدورة الشهرية: يخفف من التشنجات المصاحبة للطمث لدى النساء.', '1781588785_ATIB50US_side_web-1.jpg', 2),
+(19, 'Ibuprofen', 10.00, 200, 'إيبوبروفين (Ibuprofen)، وهو مسكن للألم ومضاد للالتهابات ومخفض للحرارة.ينتمي الدواء إلى عائلة \"مضادات الالتهاب غير الستيرويدية\" (NSAIDs) ويُستخدم بشكل شائع لتخفيف الآلام الخفيفة والمتوسطة وتخفيف الآلام: مثل صداع الرأس، ألم الأسنان، وآلام الظهر والعضلات والمفاصل.خافض للحرارة: يُستعمل لعلاج الحمى الناتجة عن نزلات البرد أو الإنفلونزا.تسكين آلام الدورة الشهرية: يخفف من التشنجات المصاحبة للطمث لدى النساء.', 'image_medicines/1783092479_بروفين.jpg', 2),
 (20, 'Amoxicillin', 20.00, 160, 'الأموكسيسيلين (Amoxicillin) هو مضاد حيوي واسع الطيف ينتمي إلى عائلة البنسلين، ويستخدم لعلاج مجموعة متنوعة من الالتهابات البكتيرية. يعمل هذا الدواء عن طريق تثبيط نمو البكتيريا وقتلها، ولكنه لا يعالج العدوى الفيروسية مثل الإنفلونز', '1781589075_Amoxicillin.png', 1),
 (21, 'Pseudoephedrine', 25.00, 200, 'السودوإيفيدرين (Pseudoephedrine) هو دواء مضاد للاحتقان (Decongestant) يعمل عن طريق تضييق الأوعية الدموية المتوسعة في الممرات الأنفية. هذا التضييق يساعد على تقليل التورم والالتهاب داخل الأنف والجيوب الأنفية، مما يسهل عملية التنفس بشكل مباشر وفوري', '1781589466_Pseudoephedrine.png', 5),
 (22, 'Omeprazole', 25.00, 150, 'دواء أوميبرازول (Omeprazole) هو مثبط لمضخة البروتون (PPI) يعمل على تقليل إفراز حمض المعدة. يُستخدم بشكل واسع لعلاج حرقة المعدة، وارتجاع المريء، وقرحة الجهاز الهضمي.', '1781590282_Omeprazole.webp', 6),
@@ -105,8 +105,8 @@ INSERT INTO `orders` (`order_id`, `user_id`, `status`, `delivery_address`, `phon
 (6, 2, 'confirmed', 'غزة  الزيتون', '0598576778', '2026-06-19 06:55:23'),
 (7, 2, 'confirmed', 'غزة  الزيتون', '0598576778', '2026-06-19 06:55:23'),
 (8, 2, 'confirmed', 'غزة  الزيتون', '0598576778', '2026-06-19 06:55:23'),
-(9, 3, 'pending', NULL, NULL, '2026-06-19 06:55:23'),
-(10, 3, 'pending', NULL, NULL, '2026-06-19 06:55:23'),
+(9, 3, 'confirmed', 'غزة  الزيتون', '0596755600', '2026-06-19 06:55:23'),
+(10, 3, 'confirmed', 'غزة  الزيتون', '0596755600', '2026-06-19 06:55:23'),
 (11, 2, 'confirmed', 'غزة  الزيتون', '0598576778', '2026-06-19 06:55:23'),
 (12, 2, 'confirmed', 'غزة  الزيتون', '0598576778', '2026-06-19 06:55:23'),
 (13, 2, 'confirmed', 'غزة  الزيتون', '0598576778', '2026-06-19 06:55:23'),
@@ -135,7 +135,10 @@ INSERT INTO `orders` (`order_id`, `user_id`, `status`, `delivery_address`, `phon
 (36, 2, 'confirmed', 'غزة  الزيتون', '0596755600', '2026-06-21 08:23:04'),
 (37, 5, 'confirmed', 'غزة تل الهوا', '0596755600', '2026-06-22 05:30:30'),
 (38, 4, 'confirmed', 'غزة الدرج', '0598576778', '2026-06-29 15:10:15'),
-(39, 4, 'confirmed', 'غزة الدرج', '0596755600', '2026-07-01 06:08:34');
+(39, 4, 'confirmed', 'غزة الدرج', '0596755600', '2026-07-01 06:08:34'),
+(40, 3, 'confirmed', 'غزة الدرج', '0594569800', '2026-07-03 13:01:15'),
+(41, 3, 'confirmed', 'غزة الدرج', '0598576778', '2026-07-03 13:01:40'),
+(42, 9, 'confirmed', 'غزة الدرج', '0598576778', '2026-07-03 15:25:07');
 
 -- --------------------------------------------------------
 
@@ -183,7 +186,12 @@ INSERT INTO `order_details` (`detail_id`, `order_id`, `medicine_id`, `quantity`,
 (39, 37, 18, 1, NULL),
 (41, 18, 19, 2, NULL),
 (42, 38, 18, 1, NULL),
-(43, 39, 18, 1, NULL);
+(43, 39, 18, 1, NULL),
+(44, 18, 18, 1, NULL),
+(45, 9, 18, 1, NULL),
+(46, 40, 19, 1, NULL),
+(47, 41, 18, 1, NULL),
+(48, 42, 19, 1, NULL);
 
 -- --------------------------------------------------------
 
@@ -203,11 +211,13 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`user_id`, `username`, `password`, `role`) VALUES
-(1, 'reem1@gmail.com', 'r2468', 'admin'),
-(2, 'mona@gmail.com', '111222333', 'customer'),
-(3, 'neveen', '2468', 'customer'),
-(4, 'amal', 'a2468', 'customer'),
-(5, 'nevo', 'nevo9', 'customer');
+(1, 'reem1@gmail.com', '$2y$10$71HQtEsHziYy7Q20f15QlunhR4mIMGB9LNny5EvXVvLc3p3VZ9shi', 'admin'),
+(2, 'mona@gmail.com', '$2y$10$9xlvYJfVVg7yva9hD1U26e4ZRjMwAnrWFUTKY1Vdnn2vBk820fdy6', 'customer'),
+(3, 'neveen', '$2y$10$x2TMsiXaKY8ogjXp1bRnhO2T5pB9jY9ujnP7xFf/qT2YD/eja.kIq', 'customer'),
+(4, 'amal', '$2y$10$ZEyAnr94/3D/z/Q1jdzOE.BcHdGt1.h8.aYVOwOLGhe8EJcSqsdF.', 'customer'),
+(5, 'nevo', '$2y$10$TeT0PPzudNGdxpeY.cU0iOArofGlQTM6I1fOFX04BZV.OyOJGcQoe', 'customer'),
+(8, 'asseel', '$2y$10$7oi9XwzGPEv9ZyCP8NFOJenzAKP3jHs6k63f0DdSZy3RWUKn9hQTy', 'customer'),
+(9, 'lama', '$2y$10$LMk7cYB7xbbN73pbpsYs.ugEY/YMTE8adBTP0W1vyNI/yOjQ6jH66', 'customer');
 
 --
 -- Indexes for dumped tables
@@ -267,19 +277,19 @@ ALTER TABLE `medicines`
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 
 --
 -- AUTO_INCREMENT for table `order_details`
 --
 ALTER TABLE `order_details`
-  MODIFY `detail_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
+  MODIFY `detail_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- قيود الجداول المُلقاة.
