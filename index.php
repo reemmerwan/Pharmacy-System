@@ -1,7 +1,7 @@
 <?php include('header.php'); ?>
 
 <style>
-    /* تصميم الواجهة الجذابة */
+   
     .hero-section {
         background: linear-gradient(rgba(0, 128, 128, 0.8), rgba(0, 128, 128, 0.8)), 
                     url('https://images.unsplash.com/photo-1587854692152-cbe660dbde88?auto=format&fit=crop&w=1350&q=80');
@@ -16,7 +16,7 @@
     .feature-box:hover { transform: scale(1.05); }
     .icon-style { font-size: 50px; color: #008080; margin-bottom: 20px; }
     
-    /* تنسيق إضافي للأقسام الجديدة */
+
     .section-title { margin-bottom: 50px; color: #008080; font-weight: bold; }
     .btn-custom { background-color: #008080; color: white; border: none; }
     .btn-custom:hover { background-color: #005f5f; color: white; }
@@ -51,36 +51,32 @@
 
     <hr>
 
-    <div class="row text-center" style="margin-top: 50px;">
+    <div class="row" style="margin-top: 50px; display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+    
+    <div style="width: 100%; text-align: center; margin-bottom: 20px;">
         <h2 class="section-title">اكتشف خدماتنا</h2>
-        <div class="col-md-4">
-            <div class="panel panel-default">
-                <div class="panel-body">
-                    <h3>المتجر الإلكتروني</h3>
-                    <p>تسوق أحدث المنتجات والعروض الطبية.</p>
-                    <a href="http://localhost/Pharmacy_System/admin/medicines.php" class="btn btn-custom">اذهب للمتجر</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="panel panel-default">
-                <div class="panel-body">
-                    <h3>قسم الأدوية</h3>
-                    <p>قائمة شاملة بالأدوية وتصنيفاتها.</p>
-                    <a href="medicines.php" class="btn btn-custom">تصفح الأدوية</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="panel panel-default">
-                <div class="panel-body">
-                    <h3>المقالات الطبية</h3>
-                    <p>نصائح ومعلومات طبية موثوقة.</p>
-                    <a href="articles.php" class="btn btn-custom">اقرأ المقالات</a>
-                </div>
+    </div>
+
+    <div class="col-md-4" style="max-width: 350px;">
+        <div class="panel panel-default" style="border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <div class="panel-body" style="padding: 30px;">
+                <h3 style="color: #008080;">المتجر الإلكتروني</h3>
+                <p>تسوق أحدث المنتجات والعروض الطبية.</p>
+                <a href="http://localhost/Pharmacy_System/admin/medicines.php" class="btn btn-custom" style="background-color: #008080; color: white;">اذهب للمتجر</a>
             </div>
         </div>
     </div>
+    
+    <div class="col-md-4" style="max-width: 350px;">
+        <div class="panel panel-default" style="border-radius: 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            <div class="panel-body" style="padding: 30px;">
+                <h3 style="color: #008080;">المقالات الطبية</h3>
+                <p>نصائح ومعلومات طبية موثوقة.</p>
+                <a href="articles.php" class="btn btn-custom" style="background-color: #008080; color: white;">اقرأ المقالات</a>
+            </div>
+        </div>
+    </div>
+    
 </div>
 
 <?php include('footer.php'); ?>
